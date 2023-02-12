@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do
-  'It works!'
+  'It works still!'
 end

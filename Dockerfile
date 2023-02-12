@@ -1,8 +1,6 @@
-# Dockerfile
-
 # Include the Ruby base image (https://hub.docker.com/_/ruby)
-# in the image for this application, version 2.7.2.
-FROM ruby:2.7.2
+# in the image for this application, version 2.7.4.
+FROM ruby:2.7.4
 
 # Put all this application's files in a directory called /code.
 # This directory name is arbitrary and could be anything.
