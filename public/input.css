@@ -2,29 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-h1,
 #masthead {
-  @apply text-2xl;
-}
-
-h2 {
-  @apply text-xl;
-}
-
-h3 {
-  @apply text-lg;
-}
-
-h4 {
-  @apply text-sm;
-}
-
-h5 {
-  @apply text-xs;
-}
-
-h6 {
-  @apply text-xs;
+  @apply font-bold;
 }
 
 p, li, {
@@ -39,8 +18,8 @@ a {
   @apply mx-auto max-w-prose px-4 py-8;
 }
 
-section + section,
+/* section + section,
 section + main,
 p + h2 {
   @apply mt-4;
-}
+} */
