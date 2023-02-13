@@ -679,12 +679,57 @@ select {
   --tw-backdrop-sepia:  ;
 }
 
-.text-lg {
+h1,
+#masthead {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+h3 {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-.text-red-500 {
+h4 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+h5 {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+p, li, {
+}
+
+a {
   --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
+  color: rgb(168 85 247 / var(--tw-text-opacity));
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 65ch;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+section + section,
+section + main,
+p + h2 {
+  margin-top: 1rem;
 }
