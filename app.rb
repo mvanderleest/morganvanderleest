@@ -8,6 +8,15 @@ get '/:article' do
   if File.exist?("views/#{params['article']}.erb")
     erb params['article'].to_sym
   else
-    erb :index
+    four_oh_four
   end
+end
+
+get '*' do
+  four_oh_four
+end
+
+private
+def four_oh_four
+  erb :four_oh_four
 end
