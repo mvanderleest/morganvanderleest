@@ -1,15 +1,12 @@
 require 'sinatra'
+require 'rdiscount'
 
 get '/' do
   erb :index
 end
 
 get '/:article' do
-  if path_matches_file_name(params['article'])
-    erb params['article'].to_sym
-  else
-    four_oh_four
-  end
+  render_file(params['article'])
 end
 
 get '*' do
@@ -21,6 +18,13 @@ def four_oh_four
   erb :four_oh_four
 end
 
-def path_matches_file_name(path)
-  File.exist?("views/#{path}.erb")
+def render_file(file_name)
+  if File.exist?("views/#{file_name}.erb")
+    erb params['article'].to_sym
+  elsif File.exist?("views/#{file_name}.md")
+    # markdown = RDiscount.new("Hello World!")
+    markdown params['article'].to_sym, :layout_engine => :erb
+  else
+    four_oh_four
+  end
 end
