@@ -9,6 +9,7 @@ COPY . /code
 
 # Run this command. RUN can be used to run anything. In our
 # case we're using it to install our dependencies.
+RUN ./tailwindcss -i input.css -o output.css --minify
 RUN bundle install
 
 # Tell Docker to listen on port 4567.
