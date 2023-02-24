@@ -1,4 +1,4 @@
-# Coaching Engineers with Questions
+# Coaching engineers with questions
 An individual contributor's career path is defined by answers. Having the answer. Finding the answer. Learning the possible answers. Some of the best engineers are those who are entrusted to find answers quickly or craft a creative answer.
 
 As an engineering leader, it's no longer about having the answer. We're not the closest to the problem anymore. We don't have all of the details. We aren't the active maintainers. You may think you have the answer. "Oh I've seen the situation before, we should do this."
